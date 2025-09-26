@@ -40,7 +40,6 @@ with open(filename,"w") as f:
             if bus_voltage < 0.5:
                 if not power_cut_reported:
                     print("power cut detected!")
-                    'GPIO.output(BUZZER_PIN,GPIO.HIGH)'
                     power_cut_reported = True
                 else:
                     if power_cut_reported:
